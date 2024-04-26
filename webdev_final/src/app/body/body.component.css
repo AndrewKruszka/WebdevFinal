@@ -1,0 +1,22 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.week {
+  display: flex;
+  justify-content: space-between;
+}
+.day {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.event {
+  background-color: #e3e3e3;
+  margin: 5px;
+  padding: 5px;
+}

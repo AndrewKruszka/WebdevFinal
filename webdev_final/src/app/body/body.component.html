@@ -1,1 +1,15 @@
-<p>body Doesn't work oh no</p>
+<div class="calendar">
+  <div class="navigation">
+    <button>Previous Week</button>
+    <button>Next Week</button>
+  </div>
+  <div class="week">
+    <div *ngFor="let day of week" class="day">
+      <h3>{{ day.date | date: 'mediumDate' }}</h3>
+      <div *ngFor="let event of day.events" class="event">
+        <span>{{ event.title }}</span>
+        <span>{{ event.time | date: 'shortTime' }}</span>
+      </div>
+    </div>
+  </div>
+</div>
